@@ -1,0 +1,144 @@
+Making request to google scholar, start=0, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 10 статей:
+1. Kotlin coroutines: design and implementation
+2. A comprehensive survey of asynchronous API approaches in concurrent I/O scenarios
+3. Reactive Programming in Kotlin: Design and Build Non-blocking, Asynchronous Kotlin Applications with RXKotlin, Reactor-Kotlin, Android, and Spring
+4. Designing Web Application Client Program Modules for Asynchronous Event Handling
+5. Programming Android with Kotlin
+6. Kotlin Mastery
+7. Programming kotlin
+8. Kotlin Programming By Example: Build real-world Android and web applications the Kotlin way
+9. The analysis and effect of Kotlin programming language in modern software development
+10. Mastering Kotlin: Learn advanced Kotlin programming techniques to build apps for Android, iOS, and the web
+==================================================
+Making request to google scholar, start=10, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 9 статей:
+1. Kotlin in action
+2. Enhancing SSR in Low-Thread Web Servers: A Comprehensive Approach for Progressive Server-Side Rendering with any Asynchronous API and Multiple …
+3. SESSION KOTLIN
+4. Analysis of Approaches to Developing Kotlin Multiplatform Applications and Their Impact on Software Engineering
+5. Removing Code Duplication Through Code Generation for Kotlin Web Services
+6. Learning Concurrency in Kotlin: Build highly efficient and robust applications
+7. … Android Development with Coroutines and Flows: Learn how to use Kotlin coroutines and the flow API to handle data streams asynchronously in your Android …
+8. Beginner's Guide to Kotlin Programming
+9. Progressive Server-Side Rendering with Suspendable Web Templates
+==================================================
+Making request to google scholar, start=20, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 10 статей:
+1. Thriving in Android Development Using Kotlin: Use the newest features of the Android framework to develop production-grade apps
+2. Comparison of structured concurrency constructs in java and kotlin–virtual threads and coroutines
+3. Kotlin Programming: The Big Nerd Ranch Guide
+4. Session Kotlin: A Hybrid Session Type Embedding in Kotlin
+5. Kotlin Coroutines by Tutorials
+6. Performance Evaluation of Kotlin Multiplatform on iOS: Quantitative comparison between Kotlin and Compose Multiplatform against Native Swift for UI Rendering …
+7. Hands-On Serverless Applications with Kotlin: Develop scalable and cost-effective web applications using AWS Lambda and Kotlin
+8. The transition from separate native (Swift+ Kotlin) mobile apps to a single codebase using Flutter.
+9. Kotlin for Android app development
+10. Leveraging Kotlin Multiplatform for Modern Mobile App Development
+==================================================
+Making request to google scholar, start=30, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 10 статей:
+1. Learn Kotlin Programming: A comprehensive guide to OOP, functions, concurrency, and coroutines in Kotlin 1.3
+2. Comparing Java with Python and Kotlin: A Comprehensive Analysis of Performance, Syntax, and Usability
+3. Hands-On Design Patterns with Kotlin: Build scalable applications using traditional, reactive, and concurrent design patterns in Kotlin
+4. The First Line of Code: Android Programming with Kotlin
+5. Hands-On Object-Oriented Programming with Kotlin: Build robust software with reusable code using OOP principles and design patterns in Kotlin
+6. Development of a multi-platform application for the University Virtual Campus
+7. Kotlin Blueprints: A practical guide to building industry-grade web, mobile, and desktop applications in Kotlin using frameworks such as Spring Boot and Node …
+8. Functional Programming in Kotlin
+9. Code Smells and Development Efficiency in Native and Cross-Platform Mobile Applications: A Study of Java, Kotlin, and Flutter.
+10. Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications
+==================================================
+Making request to google scholar, start=40, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 8 статей:
+1. Kotlin In-Depth [Vol-I]: A Comprehensive Guide to Modern Multi-Paradigm Language
+2. AI-Assisted Coding and Comparative Performance Analysis of Cross-Platform Mobile Applications: Kotlin Multiplatform Vs. React Native
+3. Energy Efficiency in Mobile Apps Using Kotlin Coroutines
+4. A Kotlin multi-platform implementation of aggregate computing based on XC
+5. Влияние асинхронных и многопоточных моделей обработки запросов на производительность серверных веб-приложений
+6. Principles, Policies, and Applications of Kotlin Programming
+7. Kotlin and Android applications: diffusion and adoption of characteristic constructs
+8. From Objects to Functions: Build Your Software Faster and Safer with Functional Programming and Kotlin
+==================================================
+Making request to google scholar, start=50, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 10 статей:
+1. Vert. x in action: asynchronous and reactive Java
+2. Enabling Progressive Server-Side Rendering for Traditional Web Template Engines with Java Virtual Threads
+3. Spring Boot Reactive
+4. Android Development with Kotlin
+5. Kotlin: The Ultimate Guide
+6. Asynchronous Programming in Java/Python: A Developer's Guide
+7. Kast-Watch Together Android application
+8. How to Build Android Apps with Kotlin: A practical guide to developing, testing, and publishing your first Android apps
+9. Reflekt: a library for compile-time reflection in kotlin
+10. Pro Spring 6 with Kotlin
+==================================================
+Making request to google scholar, start=60, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 9 статей:
+1. On the adoption, usage and evolution of Kotlin features in Android development
+2. 2p-Kt: A Kotlin-based, Multi-Platform Framework for Symbolic AI
+3. Pro Android with Kotlin
+4. Kotlin Compiler IR Visualizer
+5. Programming language abstractions for the Internet of Things era
+6. Development of integrated tools for the gamification of scripted GUI testing practices
+7. Studio di Kotlin Multiplatform Mobile come strumento per lo sviluppo di applicazioni mobile cross-platform= Study of Kotlin Multiplatform Mobile as tool for cross …
+8. Ktor Reactive Server Applications
+9. Java and Kotlin, a performance comparison
+==================================================
+Making request to google scholar, start=70, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 10 статей:
+1. Creating an educational plugin to support online programming learning a case of intellij idea plugin for a+ learning management system
+2. A Runtime Verification Framework For Kotlin Mobile Applications
+3. An empirical study on quality of Android applications written in Kotlin language
+4. Hands-On Microservices with Kotlin: Build reactive and cloud-native microservices with Kotlin using Spring 5 and Spring Boot 2.0
+5. The Joy of Kotlin
+6. Programmazione Reattiva in Kotlin su sistemi Android
+7. Tiny Android Projects Using Kotlin
+8. Performance analysis of Kotlin coroutines on Android in a model-view-intent architecture pattern
+9. Kotlin Programming: The Big Nerd Ranch Guide
+10. Performance Evaluation of Kotlin Multiplatform Mobile and Native iOS Development in Swift
+==================================================
+Making request to google scholar, start=80, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 9 статей:
+1. Kotlin apprentice: beginning programming with Kotlin
+2. Towards multi-agent platform development
+3. Programming tools for intelligent systems
+4. A Comparative Study of Callback Service Solutions
+5. Native-like cross-platform mobile development: Multi-os engine & kotlin native vs flutter
+6. Design and Implementation of a Portable Framework for Application Decomposition and Deployment in Edge-Cloud Systems
+7. Mobile Application Development with React Native and Leveraging Third-Party Libraries
+8. Kotlin In-Depth
+9. Evaluating Code Quality of AI-generated Mobile Applications: A Comparative Study of React Native and Kotlin Implementations
+==================================================
+Making request to google scholar, start=90, params=asynchronous+programming+in+kotlin+in+web
+Status Code: 200
+==================================================
+Найдено 9 статей:
+1. Traditional view system vs. Kotlin-Driven Jetpack Compose in Native Android Development
+2. A Code-Efficient Process Scripting
+3. Android widgets development: native programming with Kotlin and JetPack Glance
+4. A Code-efficient Process Scripting Language
+5. Design and Implementation of Learning Resource Exchange Platform APP Based
+6. Performance evaluation of kotlin and java on android runtime
+7. Towards high-quality Android applications development with Kotlin
+8. How and Why did developers migrate Android Applications from Java to Kotlin? A study based on code analysis and interviews with developers
+9. Development of a Prototype of a System for the communication between a Mother and a Premature Baby in an Incubator
+==================================================
