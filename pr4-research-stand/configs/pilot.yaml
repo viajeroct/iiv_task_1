@@ -1,0 +1,11 @@
+name: pilot-blocking-vs-virtual
+seed: 20261023
+profile: io
+factors:
+  impl: [blocking, virtual]
+  users: [200, 500]
+repetitions: 10
+warmup_seconds: 20
+duration_seconds: 60
+randomize_order: true
+pause_between_runs_seconds: 10

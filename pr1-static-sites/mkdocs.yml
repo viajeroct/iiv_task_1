@@ -1,0 +1,53 @@
+site_name: Проектирование веб-решений в Python
+site_description: Публикация результатов исследований — ПР1–ПР4
+site_url: https://se.ifmo.ru/~s334969/
+use_directory_urls: true
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+
+nav:
+  - Главная: index.md
+  - ПР1. T1 — сравнение генераторов: t1.md
+  - ПР1. P2 — страница-стресс-тест: p2.md
+  - ПР3. Проект стенда: pr3.md
+  - ПР4. Реализация стенда: pr4.md
+  - Отчёты: reports.md
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - assets/js/mathjax-config.js
+  - assets/js/mathjax/tex-svg.js
+  - assets/js/plotly.min.js
+
+extra_css:
+  - stylesheets/extra.css

@@ -1,0 +1,7 @@
+results/raw/
+results/processed/
+__pycache__/
+*.pyc
+.venv/
+build/
+.gradle/

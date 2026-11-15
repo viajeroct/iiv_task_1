@@ -1,0 +1,14 @@
+services:
+  hermes:
+    image: nousresearch/hermes-agent:v2026.4.30   # образ и зафиксированная версия (как в отчёте — сверьте с актуальной документацией)
+    container_name: hermes
+    restart: unless-stopped       # автозапуск после перезагрузки сервера
+    env_file: .env                # токены и ключи вне репозитория
+    command: gateway run
+    volumes:
+      - ./hermes-data:/opt/data   # должен совпадать с путём, который ожидает агент
+    mem_limit: 1g
+    cpus: 1.0
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "5" }

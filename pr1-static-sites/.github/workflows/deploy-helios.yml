@@ -1,0 +1,39 @@
+name: deploy-helios
+
+# Ручной запуск: публикация собранного сайта на Helios ИТМО по rsync.
+# Секреты репозитория: HELIOS_HOST, HELIOS_PORT, HELIOS_USER,
+# HELIOS_SSH_KEY, HELIOS_KNOWN_HOSTS.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python scripts/damped_fit.py && python scripts/make_plotly.py
+      - run: mkdocs build --strict
+
+      - name: Подготовка SSH
+        run: |
+          install -m 700 -d ~/.ssh
+          echo "${{ secrets.HELIOS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          echo "${{ secrets.HELIOS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+      - name: Публикация
+        run: |
+          rsync -az --delete site/ \
+            -e "ssh -p ${{ secrets.HELIOS_PORT || '2222' }}" \
+            "${{ secrets.HELIOS_USER }}@${{ secrets.HELIOS_HOST }}:~/public_html/"
+
+      - name: Healthcheck
+        run: |
+          curl -fsS "https://${{ secrets.HELIOS_HOST }}/~${{ secrets.HELIOS_USER }}/" \
+            | grep -q "Публикация результатов исследований"

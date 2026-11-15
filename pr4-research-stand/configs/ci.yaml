@@ -1,0 +1,11 @@
+name: ci-smoke
+seed: 20261023
+profile: io
+factors:
+  impl: [blocking, virtual]
+  users: [200]
+repetitions: 3
+warmup_seconds: 5
+duration_seconds: 15
+randomize_order: true
+pause_between_runs_seconds: 3

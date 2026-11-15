@@ -1,0 +1,32 @@
+services:
+  sut:
+    build: ./apps/web
+    environment:
+      IMPL: ${IMPL:-blocking}      # blocking | virtual
+      DB_URL: jdbc:postgresql://db:5432/bench
+    deploy:
+      resources:
+        limits: { cpus: "2", memory: 1g }   # фиксируем ресурсы SUT
+    depends_on: [db]
+    ports: ["8000:8000"]
+  db:
+    image: postgres:16.4
+    environment: { POSTGRES_PASSWORD: bench, POSTGRES_DB: bench }
+    deploy:
+      resources:
+        limits: { cpus: "1", memory: 1g }
+    volumes: ["./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro"]
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    volumes: ["./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro"]
+    ports: ["9090:9090"]
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    volumes: ["/:/rootfs:ro", "/var/run:/var/run:ro", "/sys:/sys:ro", "/var/lib/docker/:/var/lib/docker:ro"]
+  load:
+    image: grafana/k6:0.54.0
+    volumes: ["./load:/scripts:ro", "./results/raw:/results"]
+    deploy:
+      resources:
+        limits: { cpus: "2" }               # генератор не конкурирует с SUT
+    profiles: ["run"]
