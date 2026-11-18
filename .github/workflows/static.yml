@@ -42,6 +42,9 @@ jobs:
           mkdocs build --strict
 
       - uses: actions/configure-pages@v5
+        with:
+          # Включить Pages с публикацией из Actions, если ещё не включён.
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
