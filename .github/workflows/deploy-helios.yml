@@ -12,10 +12,18 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: pr1-static-sites
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12", cache: pip }
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pr1-static-sites/requirements.txt
+
       - run: pip install -r requirements.txt
       - run: python scripts/damped_fit.py && python scripts/make_plotly.py
       - run: mkdocs build --strict

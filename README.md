@@ -4,7 +4,10 @@
 в экосистеме Python»: статический сайт, агент на VPS, проект
 и реализация экспериментального стенда.
 
-Опубликованный сайт: <https://se.ifmo.ru/~s334969/>
+Опубликованные сайты:
+
+- Helios ИТМО — <https://se.ifmo.ru/~s334969/>
+- GitHub Pages — <https://viajeroct.github.io/iiv_task_1/>
 
 ## Состав
 
@@ -51,6 +54,20 @@ make analyze
 
 Параметры эксперимента — в `configs/*.yaml`; каждый прогон сохраняет
 сырые данные и JSON-манифест в `results/raw`.
+
+## Публикация
+
+| Площадка | Workflow | Триггер |
+|---|---|---|
+| GitHub Pages | `.github/workflows/static.yml` | push в `main` |
+| Helios ИТМО | `.github/workflows/deploy-helios.yml` | `workflow_dispatch` |
+
+Оба workflow собирают сайт из `pr1-static-sites` в режиме
+`mkdocs build --strict`. Для Helios нужны секреты `HELIOS_HOST`,
+`HELIOS_PORT`, `HELIOS_USER`, `HELIOS_SSH_KEY`, `HELIOS_KNOWN_HOSTS`.
+Базовый URL передаётся в `mkdocs.yml` через `SITE_URL`: на Helios —
+корень пользовательского каталога, на GitHub Pages — подкаталог
+`/iiv_task_1/`.
 
 ## Лицензии
 
