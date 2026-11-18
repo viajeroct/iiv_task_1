@@ -26,7 +26,7 @@ fig.update_layout(template="plotly_white", margin=dict(l=40, r=20, t=40, b=40),
                   legend=dict(orientation="h", y=1.12))
 
 html = fig.to_html(include_plotlyjs=False, full_html=True)
-html = html.replace("</head>", '<script src="../assets/js/plotly.min.js"></script></head>')
+html = html.replace("</head>", '<script src="assets/js/plotly.min.js"></script></head>')
 (ROOT / "docs" / "plotly-damped.html").write_text(html, encoding="utf-8")
 
 pkg = Path(plotly.__file__).resolve().parent / "package_data"
